@@ -54,4 +54,10 @@ public class Person {
         result += "(age: " + getAge() + ")";
         return result;
     }
+
+    public boolean equals(Person other) {
+        return this.getName().equals(other.getName())
+                && this.getFirstName().equals(other.getFirstName())
+                && this.getAge() == other.getAge();
+    }
 }
